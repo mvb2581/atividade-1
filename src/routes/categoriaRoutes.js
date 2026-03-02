@@ -1,7 +1,7 @@
 const express = require('express');
 const categoriaRoutes=express.Router();
 
-const {categoriaController} = require('../controller/categoriaController')
+const {categoriaController} = require('../controller/categoriaController.js')
 
 categoriaRoutes.get('/categoria', categoriaController.buscarTodasAsCategorias);
 categoriaRoutes.get('/categoria/:idCategoria', categoriaController.buscarCategoriaPorId)
@@ -10,4 +10,4 @@ categoriaRoutes.put('/categoria/:idCategoria', categoriaController.atualizarCate
 categoriaRoutes.delete('/categoria/:idCategoria',categoriaController.excluirCategoria)
 
 
-    module.exports = {produtoRoutes};
+ module.exports = {produtoRoutes};

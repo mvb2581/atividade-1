@@ -4,6 +4,6 @@ const uploadImage = createMulter({
     folder:'images',
     allowedTypes: ['image/jpeg', 'image/jpg', 'image/png'],
     fileSize: 10 * 1024 * 1024
-}).single('image')
+}).single('imagem')
 
 export default uploadImage
